@@ -4,9 +4,11 @@ import dev.buskopan.point_of_interest.controller.dto.PoiDTO;
 import dev.buskopan.point_of_interest.model.Poi;
 import dev.buskopan.point_of_interest.repository.PoiRepository;
 import dev.buskopan.point_of_interest.service.PoiService;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 
+@Service
 public class PoiServiceImpl implements PoiService {
     private final PoiRepository poiRepository;
 
