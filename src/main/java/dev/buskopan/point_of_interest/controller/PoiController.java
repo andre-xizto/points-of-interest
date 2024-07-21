@@ -11,7 +11,6 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@RequestMapping("/create")
 public class PoiController {
     private final PoiService poiService;
 
@@ -19,6 +18,7 @@ public class PoiController {
         this.poiService = poiService;
     }
 
+    @RequestMapping("/create")
     @PostMapping
     public ResponseEntity<?> create(@RequestBody PoiDTO dto) {
         Poi poi = poiService.create(dto);
