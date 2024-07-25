@@ -40,7 +40,7 @@ cd points-of-interest
     - ```mvn spring-boot:run```
 - Gradle:
     - ```gradle bootRun```
-## ☕ Documentação Senha Segura
+## ☕ Documentação Pontos de Interesse
 
 #### Cria um POI
 
